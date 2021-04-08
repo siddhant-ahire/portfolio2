@@ -3,6 +3,7 @@ import MobileRightMenuSlider from '@material-ui/core/Drawer';
 import { AppBar, Avatar, Box, IconButton, List, ListItem, ListItemIcon, ListItemText, makeStyles, Toolbar, Typography } from '@material-ui/core'
 import { Apps, ArrowBack, AssignmentInd, ContactMail, Home } from '@material-ui/icons'
 import avatar from '../avatar.png'
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles(theme=>({
     menuSliderContainer:{
@@ -23,10 +24,10 @@ const useStyles = makeStyles(theme=>({
 }))
 
 const menuItems = [
-    {listIcon:<Home/>,listText:"Home"},
-    {listIcon:<AssignmentInd/>,listText:"Resume"},
-    {listIcon:<Apps/>,listText:"Portfolio"},
-    {listIcon:<ContactMail/>,listText:"Contact"},
+    {listIcon:<Home/>,listText:"Home",listPath:'/'},
+    {listIcon:<AssignmentInd/>,listText:"Resume",listPath:'/resume'},
+    {listIcon:<Apps/>,listText:"Portfolio",listPath:'/portfolio'},
+    {listIcon:<ContactMail/>,listText:"Contact",listPath:'/contact'},
 ]
 
 const Navbar = () => {
@@ -41,7 +42,7 @@ const Navbar = () => {
             <Avatar className={classes.avatar} src={avatar}/>
             <List>
                 {menuItems.map((item,key)=>(
-                    <ListItem button key={key}>
+                <ListItem button key={key} component={Link} to={item.listPath} >
                     <ListItemIcon className={classes.listItem}>
                         {item.listIcon}
                     </ListItemIcon>
