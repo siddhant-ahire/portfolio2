@@ -120,13 +120,13 @@ const Resume = () => {
                         2013
                     </Typography>
                     <Box component="div" className={classes.timeLineItem}>
-                        <Typography variant="h5" align="" className={classes.subHeading}>
+                        <Typography variant="h5"  className={classes.subHeading}>
                             Web Design
                         </Typography>
-                        <Typography variant="body1" align="" style={{color:"tomato"}}>
+                        <Typography variant="body1"  style={{color:"tomato"}}>
                             Company name wher worked
                         </Typography>
-                        <Typography variant="subtitle1" align="" style={{color:"tan"}}>
+                        <Typography variant="subtitle1"  style={{color:"tan"}}>
                         This is also some text. This is also some text. This is also some text. This is also some text. This is also some text. This is also some text.
                         </Typography>
                     </Box>
@@ -134,13 +134,13 @@ const Resume = () => {
                         2014
                     </Typography>
                     <Box component="div" className={classes.timeLineItem}>
-                        <Typography variant="h5" align="" className={classes.subHeading}>
+                        <Typography variant="h5"  className={classes.subHeading}>
                             Web Design
                         </Typography>
-                        <Typography variant="body1" align="" style={{color:"tomato"}}>
+                        <Typography variant="body1"  style={{color:"tomato"}}>
                             Company name wher worked
                         </Typography>
-                        <Typography variant="subtitle1" align="" style={{color:"tan"}}>
+                        <Typography variant="subtitle1"  style={{color:"tan"}}>
                         This is also some text. This is also some text. This is also some text. This is also some text. This is also some text. This is also some text.
                         </Typography>
                     </Box>
@@ -148,13 +148,13 @@ const Resume = () => {
                         2015
                     </Typography>
                     <Box component="div" className={classes.timeLineItem}>
-                        <Typography variant="h5" align="" className={classes.subHeading}>
+                        <Typography variant="h5"  className={classes.subHeading}>
                             Web Design
                         </Typography>
-                        <Typography variant="body1" align="" style={{color:"tomato"}}>
+                        <Typography variant="body1"  style={{color:"tomato"}}>
                             Company name wher worked
                         </Typography>
-                        <Typography variant="subtitle1" align="" style={{color:"tan"}}>
+                        <Typography variant="subtitle1"  style={{color:"tan"}}>
                         This is also some text. This is also some text. This is also some text. This is also some text. This is also some text. This is also some text.
                         </Typography>
                     </Box>

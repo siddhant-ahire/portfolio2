@@ -4,6 +4,7 @@ import { AppBar, Avatar, Box, IconButton, List, ListItem, ListItemIcon, ListItem
 import { Apps, ArrowBack, AssignmentInd, ContactMail, Home } from '@material-ui/icons'
 import avatar from '../avatar.png'
 import { Link } from 'react-router-dom';
+import Footer from './Footer';
 
 const useStyles = makeStyles(theme=>({
     menuSliderContainer:{
@@ -68,6 +69,7 @@ const Navbar = () => {
                     </Typography>
                     <MobileRightMenuSlider anchor="right" open={state.right} onClose={toggleSlider("right",false)}>
                         {sideList()}
+                        <Footer/>
                     </MobileRightMenuSlider>
                 </Toolbar>
             </AppBar>
